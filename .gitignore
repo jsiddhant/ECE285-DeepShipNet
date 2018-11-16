@@ -1,2 +1,4 @@
 proj-env/*
 *.zip
+data/*
+.ipynb_checkpoints/*
