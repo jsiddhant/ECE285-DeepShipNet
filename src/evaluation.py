@@ -2,7 +2,7 @@ import numpy as np
 
 from skimage.data import imread
 from skimage.morphology import label
-from pipeline import rle_to_mask
+from src.pipeline import rle_to_mask
 
 def calc_IoU(A, B):
     AorB = np.logical_or(A,B).astype('int')
