@@ -3,3 +3,4 @@ data/*
 proj-env/*
 *.zip
 log/*
+code/.ipynb_checkpoints/*
