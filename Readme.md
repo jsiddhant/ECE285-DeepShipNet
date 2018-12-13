@@ -3,7 +3,7 @@ This code is part of the final project of the University of California San Diego
 Read the following instructions if you would like to run the code yourself.
 
 ### Executable Files
-For a quick demo, run the Jupyter Notebook `demo.ipynb`.  
+For a quick demo, run the Jupyter Notebook `Demo.ipynb`.  
 For a full training on the dataset, run the Jupyter Notebook `train.ipynb`.
 
 ### Requirements
