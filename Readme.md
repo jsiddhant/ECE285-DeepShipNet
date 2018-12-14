@@ -18,6 +18,9 @@ To run the notebook, you need the following packages installed:
 - tensorflow
 - keras
 - matplotlib
+- pandas
+- scikit.image
+- scikit.learn
 
 ### ECE 285 Group Project Members
 Albrecht Wigand  
