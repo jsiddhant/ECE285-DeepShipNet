@@ -2,7 +2,22 @@ import numpy as np
 
 from skimage.data import imread
 from skimage.morphology import label
-from src.pipeline import rle_to_mask
+# %run ./pipeline.py
+
+def rle_to_mask(rle_list, SHAPE):
+    '''
+    Translate labeled pixels to the mask in the image
+    '''
+    tmp_flat = np.zeros(SHAPE[0]*SHAPE[1])
+    if len(rle_list) == 1:
+        mask = np.reshape(tmp_flat, SHAPE).T
+    else:
+        strt = rle_list[::2]
+        length = rle_list[1::2]
+        for i,v in zip(strt,length):
+            tmp_flat[(int(i)-1):(int(i)-1)+int(v)] = 255
+        mask = np.reshape(tmp_flat, SHAPE).T
+    return mask
 
 def calc_IoU(A, B):
     AorB = np.logical_or(A,B).astype('int')
